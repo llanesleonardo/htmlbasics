@@ -1,7 +1,11 @@
 body{
-    background-color: black;
+    background-color: lightgray;
 }
 
 p,li,a{
-    color: white;
+    color: black;
+}
+
+.perritosimg{
+    width: 100px;
 }

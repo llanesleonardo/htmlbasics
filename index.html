@@ -7,13 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
+    <title>HTML Basics</title>
   </head>
   <body>
     <header><nav></nav></header>
     <main>
       <section>
-        <article></article>
+        <figure>
+          <img
+            class="perritosimg"
+            src="./assets/img/grande.jpg"
+            alt="perros jugando en el bosque"
+          />
+          <figcaption>Perro jugando en el bosque</figcaption>
+        </figure>
       </section>
       <ul>
         <li>Fruta</li>
@@ -24,6 +31,7 @@
               href="https://www.pequerecetas.com/receta/manzana-18-recetas/"
               >Manzana</a
             >
+            <img src="" alt="" />
           </li>
           <li>
             <a
@@ -68,6 +76,58 @@
           </li>
         </ol>
       </ul>
+      <section>
+        <video controls preload="auto" width="320" height="240">
+          <source
+            src="./assets/videos/Video1-TeoriaDesarrolloCognitivo.mp4#t=20,60"
+            type=""
+          />
+        </video>
+      </section>
+      <section>
+        <div>
+          <form action="">
+            <label for="name">
+              <span>¿Cuál es tu nombre?</span>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="tu nombre"
+              />
+            </label>
+            <label for="diainicio">
+              <span>¿Qué dia inicio en platzi?</span>
+              <input type="date" name="diainicio" id="diainicio" />
+            </label>
+            <label for="horario">
+              <span>¿En que horario te gusta estudiar?</span>
+              <input type="time" name="horario" id="horario" />
+            </label>
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+        <hr />
+        <form action="">
+          <label for="hora">
+            <span>hora</span>
+            <input type="time" name="hora" id="hora" />
+          </label>
+          <label for="dia">
+            <span>hora</span>
+            <input type="date" name="dia" id="dia" />
+          </label>
+          <label for="semana">
+            <span>hora</span>
+            <input type="week" name="semana" id="semana" />
+          </label>
+          <label for="mes">
+            <span>hora</span>
+            <input type="month" name="mes" id="mes" />
+          </label>
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
     </main>
     <footer></footer>
   </body>
