@@ -1,3 +1,56 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: inherit;
+    font-family: serif;
+    color: purple;
+    margin-bottom: 10px;
+}
+
+h2 + p {
+    color: red;
+}
+
+
+.title{
+    font-size: 18px;
+    font-family: monospace;
+   
+}
+
+.nav{
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+
+
+.nav a{
+    color: white;
+    background-color: #13a4a4;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.nav .blog {
+    background-color: red;
+}
+
 body{
     background-color: lightgray;
 }
@@ -8,4 +61,41 @@ p,li,a{
 
 .perritosimg{
     width: 100px;
+}
+
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0px;
+    background-color: #13a4a4;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    color:white;
+    padding: 5px ;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.main-nav__item a:hover {
+    color: blue;
+}
+
+.main-nav__item a:active {
+    color:red;
+}
+.main-nav__item a::after {
+    content: " | ";
+}
+
+
+main{
+    width: 100%;
+    height: 500px;
+    border: 10px solid gray;
+    padding: 20px 35px;
 }
