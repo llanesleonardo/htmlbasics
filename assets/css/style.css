@@ -1,3 +1,12 @@
+:root {
+--primary-color: red;
+--secundary-color:blue;
+--header-size:6rem;
+--font:1.8rem;
+}
+
+
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -6,12 +15,12 @@
 
 html{
     font-size: 62.5%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
     font-size: inherit;
-    font-family: serif;
+
     color: purple;
     margin-bottom: 10px;
 }
@@ -31,7 +40,7 @@ div > p {
 }
 
 .title{
-    font-size: 18px;
+    font-size:var(--header-size);
     font-family: monospace;
    
 }
@@ -104,7 +113,7 @@ p,li,a{
 
 main{
     width: 100%;
-    height: 500px;
+    min-height: 100vh;
     border: 10px solid gray;
     padding: 20px 35px;
 }
@@ -201,4 +210,154 @@ main{
     background-color: green;
     padding: 20px;
     margin: 10px;
+}
+
+.navmain{
+    background-color: peachpuff;
+    padding: 20px;
+    text-align: center;
+    list-style: none;
+}
+
+.navmain li{
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.layoutbasico{
+    width: 100%;
+    min-height: 50vh;
+    background-color: lightblue;
+    margin-top: 100px;
+}
+
+.layoutlevel {
+    display: block;
+}
+
+.headerlevel, .footerlevel{
+    display: inline-block;
+    padding: 5px;
+    width: 45%;
+}
+
+#header{
+    background-color: gray;
+}
+
+#main{
+    background-color: white;
+    
+}
+
+#footer{
+    background-color: yellow;
+    
+}
+
+
+#main-nav, #social-nav{
+ display: inline-block;
+ list-style: none;
+ height: auto;
+}
+
+#main-nav li,#social-nav li{
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+}
+
+.mainlevel{
+    display: inline-block;
+    padding: 5px;
+    height: 50vh;
+}
+
+#sidebar{
+width: 20%;
+background-color: peachpuff;
+float: left;
+overflow-y: scroll;
+}
+
+#maincontent{
+width: 80%;
+}
+
+.sideboxes{
+    display: block;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    margin: 20px;
+    background-color: lightcyan;
+    border-radius: 10px;
+}
+
+.flexclass{
+    border: 0.3rem solid black;
+    display: flex;
+    /* flex-direction: row-reverse;
+   
+    justify-content: space-evenly; */
+    /* min-height: 50vh; */
+    /* align-items: stretch;
+*/
+flex-wrap: wrap;
+}
+.flexclass p {
+    color: black;
+}
+
+.boxx{
+    width: 10rem;
+    height: 10rem; 
+     flex-basis: 10rem;
+     flex-grow: 1;
+}
+
+.box1{
+    background-color: blue;
+
+   
+}
+
+.box2{
+    background-color: blueviolet;
+   
+   
+}
+
+.box3{
+    background-color: burlywood;
+   
+}
+
+.box4{
+    background-color: cadetblue;
+  
+}
+
+.box5{
+    background-color: coral;
+   
+}
+
+.box6{
+    background-color: salmon;
+   
+}
+
+.variablesclass h1{
+    font-size: var(--header-size);
+}
+
+footer {
+    /* width: 100vw; */
+    height: 15vh;
+    background-color: var(--secundary-color);
 }
