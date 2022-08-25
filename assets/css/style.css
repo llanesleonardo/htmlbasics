@@ -16,10 +16,19 @@ h1 {
     margin-bottom: 10px;
 }
 
+
+h2 ~ p {
+    color:blue;
+}
+
+
 h2 + p {
     color: red;
 }
 
+div > p {
+    color: brown;
+}
 
 .title{
     font-size: 18px;
